@@ -49,7 +49,7 @@ namespace Studio6
             return input == 'z' ? 'a' : (char)((int)input + 1);
         }
 
-        private List<string> Randomize()
+        public List<string> Randomize()
         {
             Random rng = new Random();
             List<string> output = PossibleAnswers.OrderBy(x => rng.Next()).ToList();
